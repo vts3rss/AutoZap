@@ -1,0 +1,100 @@
+.header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.header__contacts {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.header__contacts-images {
+    object-fit: contain;
+    display: block;
+    height: 28px;
+    width: auto;
+}
+
+.header__phone {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.header__icons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.header__star-icon {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+
+}
+
+
+.header__star-icon-img {
+    position: relative;
+    max-height: 40px;
+    height: 100%;
+    width: auto;
+}
+
+
+.header__star-count {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    font-size: 12px;
+    color: white;
+    //background: #E52E2E;
+    background: green;
+    width: 19px;
+    height: 19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+
+
+.header__basket {
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+
+.header__basket-icon {
+    max-height: 40px;
+    height: 100%;
+    width: auto;
+}
+
+.header__basket-text {
+
+}
+
+
+.header__account {
+    display: flex;
+    flex-direction: row;
+}
+
+.header__account-icon {
+    max-height: 40px;
+    height: 100%;
+    width: auto;
+}
+
+.header__account-text {
+
+}
