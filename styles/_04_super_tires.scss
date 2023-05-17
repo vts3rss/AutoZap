@@ -1,0 +1,31 @@
+.super-tires {
+  height: 240px;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .super-tires-image {
+    display: block;
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: cover;
+    background: url(".");
+  }
+
+  .super-left-arrow {
+
+    position: absolute;
+    left: 18px;
+
+  }
+
+  .super-right-arrow {
+
+    position: absolute;
+    right: 18px;
+
+  }
+}
+
+

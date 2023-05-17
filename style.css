@@ -190,4 +190,135 @@
   line-height: 21px;
 }
 
+.super-tires {
+  height: 240px;
+  margin-top: 20px;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.super-tires .super-tires-image {
+  display: block;
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: cover;
+  background: url(".");
+}
+.super-tires .super-left-arrow {
+  position: absolute;
+  left: 18px;
+}
+.super-tires .super-right-arrow {
+  position: absolute;
+  right: 18px;
+}
+
+.moto-tabs {
+  position: relative;
+  z-index: 9;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  overflow-x: auto;
+  margin-top: 41px;
+}
+.moto-tabs::-webkit-scrollbar {
+  display: none;
+}
+.moto-tabs::-webkit-scrollbar-thumb {
+  display: none;
+}
+.moto-tabs .moto-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #9B9B9B;
+}
+.moto-tabs .moto-tab:hover {
+  cursor: pointer;
+  user-select: none;
+}
+.moto-tabs .moto-tab .moto-tab-text {
+  font-size: 18px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+}
+.moto-tabs .moto-tab:nth-child(1) {
+  margin-right: 35px;
+}
+.moto-tabs .moto-tab:nth-child(2) {
+  margin-right: 43px;
+}
+.moto-tabs .moto-tab .input_radio {
+  display: none;
+}
+.moto-tabs .moto-tab .moto-tab-line {
+  position: relative;
+  z-index: 3;
+  margin-top: 13px;
+  display: none;
+}
+.moto-tabs .moto-tab:has(input:checked) {
+  color: #111111;
+}
+.moto-tabs .moto-tab:has(input:checked) .moto-tab-text {
+  font-weight: 700;
+}
+.moto-tabs .moto-tab:has(input:checked) .moto-tab-line {
+  position: relative;
+  z-index: 9;
+  display: block;
+  height: 6px;
+  background: #E52E2E;
+  border-radius: 5px;
+  width: calc(100% - 26px);
+}
+
+body .moto-tab-descriptions {
+  position: relative;
+  top: -3px;
+  z-index: 5;
+}
+body .moto-tab-descriptions .moto-tab-description {
+  position: relative;
+  z-index: 5;
+  padding: 38px 42px;
+  background: #EEEFF0;
+  border-radius: 7px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 63px;
+}
+body .moto-tab-descriptions .moto-tab-description .moto-column {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem {
+  height: 32px;
+  width: 135px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 19px;
+}
+body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-elem-img {
+  max-height: 32px;
+  max-width: 32px;
+  width: 100%;
+  height: 100%;
+}
+body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-elem-text {
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.market {
+  margin-top: 44px;
+  height: 490px;
+}
+
 /*# sourceMappingURL=style.css.map */

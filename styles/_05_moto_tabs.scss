@@ -1,0 +1,143 @@
+
+.moto-tabs {
+  position: relative;
+  z-index: 9;
+
+  display: flex;
+  flex-direction: row;
+
+  width: 100%;
+  overflow-x: auto;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    display: none;
+  }
+
+  margin-top: 41px;
+
+  .moto-tab {
+
+
+    display: flex;
+
+    flex-direction: column;
+    //gap: 10px;
+    align-items: center;
+
+    color: #9B9B9B;
+
+    &:hover {
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .moto-tab-text {
+      font-size: 18px;
+      font-family: 'Arial', sans-serif;
+      font-style: normal;
+    }
+
+    &:nth-child(1) {
+      margin-right: 35px;
+
+    }
+
+    &:nth-child(2) {
+      margin-right: 43px;
+
+
+    }
+
+
+    .input_radio {
+      display: none;
+    }
+
+    .moto-tab-line {
+      position: relative;
+      z-index: 3;
+      margin-top: 13px;
+      display: none;
+    }
+  }
+
+  .moto-tab:has(input:checked) {
+    color: #111111;
+
+    .moto-tab-text {
+      font-weight: 700;
+
+    }
+
+    .moto-tab-line {
+      position: relative;
+      z-index: 9;
+      display: block;
+      height: 6px;
+      background: #E52E2E;
+      border-radius: 5px;
+      width: calc(100% - 26px)
+    }
+
+
+  }
+
+}
+
+//body:has(.moto-tab:nth-child(1) input:checked) {
+body {
+  .moto-tab-descriptions {
+    position: relative;
+    top: -3px;
+    z-index: 5;
+
+    .moto-tab-description {
+      position: relative;
+      z-index: 5;
+
+      padding: 38px 42px;
+      background: #EEEFF0;
+      border-radius: 7px;
+
+      display: flex;
+      flex-direction: row;
+      column-gap: 63px;
+
+      .moto-column {
+        display: flex;
+        gap: 16px;
+        flex-direction: column;
+
+
+        .moto-elem {
+          height: 32px;
+          width: 135px;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+
+          gap: 19px;
+
+          .moto-elem-img {
+            max-height: 32px;
+            max-width: 32px;
+            width: 100%;
+            height: 100%;
+          }
+
+          .moto-elem-text {
+            font-family: 'Arial', sans-serif;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
