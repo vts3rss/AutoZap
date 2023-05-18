@@ -6,6 +6,13 @@
   background: #FFC045;
   border-radius: 7px;
 
+  @media screen and (max-width: 650px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    justify-content: space-between;
+
+
+  }
 
   .menu {
     font-size: 16px;
@@ -18,11 +25,26 @@
     padding-left: 21px;
     padding-right: 21px;
 
+    @media screen and (max-width: 650px) {
+      padding-left: 0;
+      padding-right: 0;
+    }
+
     background: rgba(255, 255, 255, 0.2);
     border-radius: 5px;
 
     height: 50px;
     width: 195px;
+
+    @media screen and (max-width: 650px) {
+      background: inherit;
+
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
 
     .menu__burger {
       display: flex;
@@ -62,6 +84,11 @@
       outline: none;
       border: none;
     }
+
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+
   }
 
   .search-button {
@@ -80,6 +107,25 @@
     font-size: 18px;
     line-height: 21px;
 
+    @media screen and (max-width: 650px) {
+      display: none;
+    }
+
+
+    &:hover {
+      cursor: pointer;
+    }
+
+
+  }
+
+
+  .search-icon-button {
+    display: none;
+
+    @media screen and (max-width: 650px) {
+      display: block;
+    }
   }
 
 
