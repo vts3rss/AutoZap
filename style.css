@@ -26,6 +26,8 @@
   .header {
     padding-top: 15px;
     padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -77,6 +79,11 @@
   flex-direction: row;
   margin-right: 19px;
 }
+@media screen and (max-width: 650px) {
+  .header .header__icons .header__star-icon {
+    margin-right: 10px;
+  }
+}
 .header .header__icons .header__star-icon:hover {
   cursor: pointer;
 }
@@ -109,7 +116,7 @@
 }
 @media screen and (max-width: 650px) {
   .header .header__icons .header__basket {
-    margin-right: 19px;
+    margin-right: 10px;
   }
 }
 .header .header__icons .header__basket:hover {
@@ -184,6 +191,8 @@
     padding-top: 5px;
     padding-bottom: 5px;
     justify-content: space-between;
+    border-radius: 0;
+    padding-right: 25px;
   }
 }
 .search-bar .menu {
@@ -204,6 +213,7 @@
   .search-bar .menu {
     padding-left: 0;
     padding-right: 0;
+    gap: 15px;
   }
 }
 @media screen and (max-width: 650px) {
@@ -288,11 +298,14 @@
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
+  z-index: 1;
 }
 @media screen and (max-width: 650px) {
   .super-tires {
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 10px;
   }
 }
 .super-tires .super-tires-image {
@@ -329,12 +342,49 @@
 .super-tires .super-left-arrow:hover {
   cursor: pointer;
 }
+@media screen and (max-width: 450px) {
+  .super-tires .super-left-arrow {
+    display: none;
+  }
+}
 .super-tires .super-right-arrow {
   position: absolute;
   right: 18px;
 }
 .super-tires .super-right-arrow:hover {
   cursor: pointer;
+}
+@media screen and (max-width: 450px) {
+  .super-tires .super-right-arrow {
+    display: none;
+  }
+}
+.super-tires .breadcrumbs_container {
+  display: none;
+  flex-direction: row;
+  position: absolute;
+  align-self: end;
+  justify-content: center;
+  gap: 4px;
+  left: 0;
+  right: 0;
+  bottom: 15px;
+  z-index: 10;
+}
+@media screen and (max-width: 450px) {
+  .super-tires .breadcrumbs_container {
+    display: flex;
+  }
+}
+.super-tires .breadcrumbs_container .circle {
+  z-index: 5;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  background-color: white;
+}
+.super-tires .breadcrumbs_container .circle.circle-red {
+  background-color: #E52E2E;
 }
 
 .moto-tabs {
@@ -344,7 +394,13 @@
   flex-direction: row;
   width: 100%;
   overflow-x: auto;
-  margin-top: 41px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+@media screen and (max-width: 650px) {
+  .moto-tabs {
+    margin-top: 20px;
+  }
 }
 .moto-tabs::-webkit-scrollbar {
   display: none;
@@ -367,11 +423,26 @@
   font-family: "Arial", sans-serif;
   font-style: normal;
 }
+@media screen and (max-width: 650px) {
+  .moto-tabs .moto-tab .moto-tab-text {
+    font-size: 16px;
+  }
+}
 .moto-tabs .moto-tab:nth-child(1) {
   margin-right: 35px;
 }
+@media screen and (max-width: 650px) {
+  .moto-tabs .moto-tab:nth-child(1) {
+    margin-right: 33px;
+  }
+}
 .moto-tabs .moto-tab:nth-child(2) {
   margin-right: 43px;
+}
+@media screen and (max-width: 650px) {
+  .moto-tabs .moto-tab:nth-child(2) {
+    margin-right: 33px;
+  }
 }
 .moto-tabs .moto-tab .input_radio {
   display: none;
@@ -397,6 +468,11 @@
   border-radius: 5px;
   width: calc(100% - 26px);
 }
+@media screen and (max-width: 650px) {
+  .moto-tabs .moto-tab:has(input:checked) .moto-tab-line {
+    width: calc(100% - 18px);
+  }
+}
 
 body .moto-tab-descriptions {
   position: relative;
@@ -411,12 +487,40 @@ body .moto-tab-descriptions .moto-tab-description {
   border-radius: 7px;
   display: flex;
   flex-direction: row;
-  column-gap: 63px;
+  flex-wrap: wrap;
+  row-gap: 40px;
+  justify-content: space-between;
+}
+@media screen and (max-width: 650px) {
+  body .moto-tab-descriptions .moto-tab-description {
+    padding-left: 10px;
+    padding-right: 30px;
+  }
 }
 body .moto-tab-descriptions .moto-tab-description .moto-column {
   display: flex;
   gap: 16px;
   flex-direction: column;
+}
+@media screen and (max-width: 1210px) {
+  body .moto-tab-descriptions .moto-tab-description .moto-column:nth-child(6) {
+    display: none;
+  }
+}
+@media screen and (max-width: 1040px) {
+  body .moto-tab-descriptions .moto-tab-description .moto-column:nth-child(5) {
+    display: none;
+  }
+}
+@media screen and (max-width: 780px) {
+  body .moto-tab-descriptions .moto-tab-description .moto-column:nth-child(4) {
+    display: none;
+  }
+}
+@media screen and (max-width: 600px) {
+  body .moto-tab-descriptions .moto-tab-description .moto-column:nth-child(3) {
+    display: none;
+  }
 }
 body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem {
   height: 32px;
@@ -426,6 +530,11 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem {
   align-items: center;
   justify-content: flex-start;
   gap: 19px;
+}
+@media screen and (max-width: 650px) {
+  body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem {
+    gap: 17px;
+  }
 }
 body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-elem-img {
   max-height: 32px;
@@ -667,7 +776,7 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-
   color: #111111;
 }
 
-.moto-tabs, .moto-tab-descriptions, .market, .market-category, .geopgraphy, .footer {
+.market, .market-category, .geopgraphy, .footer {
   display: none;
 }
 

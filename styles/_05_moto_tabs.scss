@@ -9,6 +9,14 @@
   width: 100%;
   overflow-x: auto;
 
+
+  @media screen and (max-width: 650px) {
+    margin-top: 20px;
+  }
+
+  padding-left: 10px;
+  padding-right: 10px;
+
   &::-webkit-scrollbar {
     display: none;
   }
@@ -17,7 +25,6 @@
     display: none;
   }
 
-  margin-top: 41px;
 
   .moto-tab {
 
@@ -30,6 +37,7 @@
 
     color: #9B9B9B;
 
+
     &:hover {
       cursor: pointer;
       user-select: none;
@@ -39,17 +47,28 @@
       font-size: 18px;
       font-family: 'Arial', sans-serif;
       font-style: normal;
+
+      @media screen and (max-width: 650px) {
+        font-size: 16px;
+      }
+
     }
 
     &:nth-child(1) {
       margin-right: 35px;
+
+      @media screen and (max-width: 650px) {
+        margin-right: 33px;
+      }
 
     }
 
     &:nth-child(2) {
       margin-right: 43px;
 
-
+      @media screen and (max-width: 650px) {
+        margin-right: 33px;
+      }
     }
 
 
@@ -80,7 +99,11 @@
       height: 6px;
       background: #E52E2E;
       border-radius: 5px;
-      width: calc(100% - 26px)
+      width: calc(100% - 26px);
+
+      @media screen and (max-width: 650px) {
+        width: calc(100% - 18px);
+      }
     }
 
 
@@ -100,17 +123,53 @@ body {
       z-index: 5;
 
       padding: 38px 42px;
+
+
       background: #EEEFF0;
       border-radius: 7px;
 
       display: flex;
       flex-direction: row;
-      column-gap: 63px;
+      flex-wrap: wrap;
+
+
+      row-gap: 40px;
+      justify-content: space-between;
+      //column-gap: 63px;
+
+      @media screen and (max-width: 650px) {
+        padding-left: 10px;
+        padding-right: 30px;
+      }
 
       .moto-column {
         display: flex;
         gap: 16px;
         flex-direction: column;
+
+        &:nth-child(6) {
+          @media screen and (max-width: 1210px) {
+            display: none;
+          }
+        }
+
+        &:nth-child(5) {
+          @media screen and (max-width: 1040px) {
+            display: none;
+          }
+        }
+
+        &:nth-child(4) {
+          @media screen and (max-width: 780px) {
+            display: none;
+          }
+        }
+
+        &:nth-child(3) {
+          @media screen and (max-width: 600px) {
+            display: none;
+          }
+        }
 
 
         .moto-elem {
@@ -123,12 +182,19 @@ body {
 
           gap: 19px;
 
+
+          @media screen and (max-width: 650px) {
+            gap: 17px;
+          }
+
+
           .moto-elem-img {
             max-height: 32px;
             max-width: 32px;
             width: 100%;
             height: 100%;
           }
+
 
           .moto-elem-text {
             font-family: 'Arial', sans-serif;

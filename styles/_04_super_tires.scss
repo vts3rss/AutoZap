@@ -3,12 +3,16 @@
   height: 240px;
   margin-top: 20px;
   position: relative;
+
   display: flex;
   align-items: center;
+  justify-content: center;
+  z-index: 1;
 
   @media screen and (max-width: 650px) {
     padding-left: 10px;
     padding-right: 10px;
+    margin-top: 10px;
   }
 
   .super-tires-image {
@@ -41,7 +45,6 @@
     }
 
 
-    //super-tires-image mobile-version
   }
 
   .super-left-arrow {
@@ -51,6 +54,10 @@
 
     &:hover {
       cursor: pointer;
+    }
+
+    @media screen and (max-width: 450px) {
+      display: none;
     }
 
   }
@@ -64,7 +71,44 @@
     position: absolute;
     right: 18px;
 
+    @media screen and (max-width: 450px) {
+      display: none;
+    }
+
   }
+
+  .breadcrumbs_container {
+
+    display: none;
+    flex-direction: row;
+    position: absolute;
+    align-self: end;
+    justify-content: center;
+    gap: 4px;
+    left: 0;
+    right: 0;
+    bottom: 15px;
+    z-index: 10;
+
+
+    @media screen and (max-width: 450px) {
+      display: flex;
+    }
+
+    .circle {
+      z-index: 5;
+      width: 8px;
+      height: 8px;
+      border-radius: 8px;
+      background-color: white;
+
+      &.circle-red {
+        background-color: #E52E2E;
+      }
+    }
+
+  }
+
 }
 
 

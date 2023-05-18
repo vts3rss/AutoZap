@@ -5,7 +5,12 @@
   @media screen and (max-width: 650px) {
     padding-top: 15px;
     padding-bottom: 15px;
+
+    padding-left: 10px;
+    padding-right: 10px;
   }
+
+
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -70,7 +75,12 @@
       position: relative;
       display: flex;
       flex-direction: row;
+
       margin-right: 19px;
+
+      @media screen and (max-width: 650px) {
+        margin-right: 10px;
+      }
 
       &:hover {
         cursor: pointer;
@@ -110,7 +120,7 @@
       margin-right: 47px;
 
       @media screen and (max-width: 650px) {
-        margin-right: 19px;
+        margin-right: 10px;
       }
 
       &:hover {
