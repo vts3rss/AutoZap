@@ -1,0 +1,30 @@
+.market-category {
+
+  margin-top: 42px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+
+  column-gap: 24px;
+
+  .market-category-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 1fr);
+
+
+    .market-category-elem {
+
+      font-family: 'Arial', sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      height: 37px;
+      color: #111111;
+
+
+    }
+  }
+
+
+}

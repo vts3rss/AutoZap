@@ -1,10 +1,13 @@
-@import "./styles/_00_commonstyles.scss";
+@import "./styles/_00_common_styles.scss";
 @import "./styles/_01_main_container.scss";
 @import "./styles/02_header.scss";
 @import "./styles/03_search_bar";
 @import "./styles/04_super_tires.scss";
 @import "./styles/05_moto_tabs.scss";
-
 @import "./styles/06_market.scss";
-@import "./styles/07_geography.scss";
-@import "./styles/08_footer.scss";
+@import "./styles/_07_market_category.scss";
+@import "./styles/_08_geography.scss";
+@import "./styles/_09_footer.scss";
+
+
+
