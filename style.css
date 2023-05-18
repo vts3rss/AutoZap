@@ -519,6 +519,7 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-
   object-fit: contain;
   object-position: left top;
   max-height: 28px;
+  opacity: 0.7;
 }
 .footer .footer-column.footer-bank .wallet-grid {
   display: grid;
