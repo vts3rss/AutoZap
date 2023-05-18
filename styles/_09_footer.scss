@@ -1,21 +1,118 @@
 .footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background: #EEEFF0;
+  border-radius: 7px;
+  padding-top: 69px;
+  padding-bottom: 69px;
+
   .footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+
+    &:nth-child(4) {
+      position: relative;
+      left: 10px;
+    }
+
+    &.footer-logo-column {
+      display: flex;
+      flex-direction: column;
+      width: 350px;
+
+      .footer-logo {
+        max-width: 100%;
+        max-height: 34px;
+
+        display: block;
+        object-fit: contain;
+        object-position: left top;
+
+        margin-bottom: 48px;
+
+      }
+
+      .footer-phone {
+
+        text-decoration: inherit;
+
+        font-family: 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
+
+        color: #000000;
+
+        margin-bottom: 12px;
+
+      }
+
+      .footer-social {
+        max-width: 100%;
+        display: block;
+        object-fit: contain;
+        object-position: left top;
+        max-height: 28px;
+      }
+
+
+    }
+
     &.footer-bank {
 
-    }
 
-    .footer-logo {
+      .wallet-grid {
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
 
-    }
+        row-gap: 10px;
+        column-gap: 10px;
 
-    .footer-social {
+        justify-items: center;
+        align-items: center;
+
+        .wallet-grid-elem {
+          display: block;
+          object-fit: contain;
+          object-position: right;
+
+          &:nth-child(1) {
+
+          }
+
+          &:nth-child(2) {
+
+          }
+
+          &:nth-child(3) {
+
+          }
+
+          &:nth-child(4) {
+
+          }
+
+
+        }
+      }
 
     }
 
 
     .footer-elem {
       &.footer-title {
+        font-family: 'Arial', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 18px;
 
+        color: #111111;
       }
 
 
