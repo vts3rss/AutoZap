@@ -214,6 +214,10 @@
   right: 18px;
 }
 
+.super-tires {
+  display: none;
+}
+
 .moto-tabs {
   position: relative;
   z-index: 9;
@@ -317,6 +321,10 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-
   font-size: 16px;
 }
 
+.moto-tabs {
+  display: none;
+}
+
 .market {
   margin-top: 44px;
   display: grid;
@@ -411,6 +419,10 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-
   top: 24px;
   left: 26px;
 }
+.market {
+  display: none;
+}
+
 .market-category {
   margin-top: 42px;
   display: grid;
@@ -430,6 +442,10 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-
   font-size: 18px;
   height: 37px;
   color: #111111;
+}
+
+.market-category {
+  display: none;
 }
 
 .geopgraphy {
@@ -470,6 +486,10 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-
   grid-row: 1/2;
   max-width: 100%;
   max-height: 100%;
+}
+
+.geopgraphy {
+  display: none;
 }
 
 .footer {
@@ -542,6 +562,10 @@ body .moto-tab-descriptions .moto-tab-description .moto-column .moto-elem .moto-
   font-size: 16px;
   line-height: 18px;
   color: #111111;
+}
+
+.footer {
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
