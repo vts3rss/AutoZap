@@ -1146,6 +1146,7 @@ body:has(.tab_1 input:checked) .moto-tab-descriptions .moto-tab-description .all
   flex-direction: row;
   justify-content: space-between;
   padding-right: 27px;
+  gap: 23px;
 }
 .menu-container .menu_block .menu-block-column_1 .menu-block-1-item .common-arrow {
   display: block;
