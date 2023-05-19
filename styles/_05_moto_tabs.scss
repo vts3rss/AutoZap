@@ -117,6 +117,10 @@
 
 body {
   .moto-tab-descriptions {
+    position: relative;
+    top: -3px;
+    z-index: 5;
+
     .moto-tab-description {
       display: none;
     }
@@ -165,9 +169,6 @@ body:has(.tab_3 input:checked), {
 
 body:has(.tab_1 input:checked) {
   .moto-tab-descriptions {
-    position: relative;
-    top: -3px;
-    z-index: 5;
 
 
     .moto-tab-description {
