@@ -113,13 +113,65 @@
 }
 
 //body:has(.moto-tab:nth-child(1) input:checked) {
+//body
+
 body {
+  .moto-tab-descriptions {
+    .moto-tab-description {
+      display: none;
+    }
+
+    .moto-tab-2 {
+      display: none;
+    }
+
+    .moto-tab-3 {
+      display: none;
+    }
+  }
+}
+
+body:has(.tab_2 input:checked), {
+  .moto-tab-descriptions {
+    .moto-tab-description {
+      display: none;
+    }
+
+    .moto-tab-2 {
+      padding: 38px 42px;
+      display: flex;
+      background: #EEEFF0;
+    }
+
+  }
+}
+
+
+body:has(.tab_3 input:checked), {
+  .moto-tab-descriptions {
+    .moto-tab-description {
+      display: none;
+    }
+
+    .moto-tab-3 {
+      padding: 38px 42px;
+      display: flex;
+      background: #EEEFF0;
+    }
+
+  }
+}
+
+
+body:has(.tab_1 input:checked) {
   .moto-tab-descriptions {
     position: relative;
     top: -3px;
     z-index: 5;
 
+
     .moto-tab-description {
+
       position: relative;
       z-index: 5;
 
@@ -130,6 +182,7 @@ body {
       border-radius: 7px;
 
       display: flex;
+      //display: none;
       flex-direction: row;
       flex-wrap: wrap;
 
@@ -144,6 +197,7 @@ body {
       }
 
       .moto-column {
+        z-index: 2;
         display: flex;
         gap: 16px;
         flex-direction: column;
@@ -205,8 +259,51 @@ body {
           }
         }
       }
+
+      .all-brands {
+        position: absolute;
+        bottom: -15px;
+
+        right: 33px;
+
+        @media screen and (max-width: 850px) {
+          left: 0;
+          right: 0;
+          justify-items: center;
+          align-items: center;
+        }
+
+
+        border-radius: 5px;
+        z-index: 5;
+
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+        .all-button {
+          font-family: 'Arial', sans-serif;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 16px;
+          color: #111111;
+          background-color: white;
+          padding-top: 5px;
+          padding-bottom: 9px;
+          padding-left: 16px;
+          padding-right: 16px;
+        }
+
+
+      }
     }
+
+
   }
 }
+
 
 
