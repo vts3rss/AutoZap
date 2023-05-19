@@ -1114,9 +1114,11 @@ body:has(.tab_1 input:checked) .moto-tab-descriptions .moto-tab-description .all
 .menu-container {
   position: relative;
   z-index: 10;
+  top: 20px;
 }
 .menu-container .menu_block {
   display: flex;
+  flex-direction: row;
   z-index: 10;
   position: absolute;
   left: 0;
@@ -1125,13 +1127,79 @@ body:has(.tab_1 input:checked) .moto-tab-descriptions .moto-tab-description .all
   border-radius: 7px;
 }
 .menu-container .menu_block .menu-block-column_1 {
+  padding-top: 21px;
+  padding-bottom: 21px;
+  border-right: 1px solid #D9D9D9;
   display: flex;
   flex-direction: column;
   display: none;
 }
+.menu-container .menu_block .menu-block-column_1 .menu-block-1-item {
+  padding-left: 35px;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #000000;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 27px;
+}
+.menu-container .menu_block .menu-block-column_1 .menu-block-1-item .common-arrow {
+  display: block;
+}
+.menu-container .menu_block .menu-block-column_1 .menu-block-1-item .selected-arrow {
+  display: none;
+}
+.menu-container .menu_block .menu-block-column_1 .menu-block-1-item:hover {
+  background: #E52E2E;
+  color: white;
+  cursor: pointer;
+}
+.menu-container .menu_block .menu-block-column_1 .menu-block-1-item:hover .common-arrow {
+  display: none;
+}
+.menu-container .menu_block .menu-block-column_1 .menu-block-1-item:hover .selected-arrow {
+  display: block;
+}
 .menu-container .menu_block .menu-block-column_2 {
   display: flex;
   flex-direction: column;
+  display: none;
+}
+.menu-container .menu_block .menu-block-column_2 .menu-block-2-item {
+  border-right: 1px solid #D9D9D9;
+  font-family: "Arial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+  line-height: 29px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 23px;
+  padding-left: 29px;
+  gap: 23px;
+}
+.menu-container .menu_block .menu-block-column_2 .menu-block-2-item:hover {
+  background: #454545;
+  color: white;
+  cursor: pointer;
+}
+.menu-container .menu_block .menu-block-column_2 .menu-block-2-item:hover .common-arrow {
+  display: none;
+}
+.menu-container .menu_block .menu-block-column_2 .menu-block-2-item:hover .selected-arrow {
+  display: block;
+}
+.menu-container .menu_block .menu-block-column_2 .menu-block-2-item .common-arrow {
+  display: block;
+}
+.menu-container .menu_block .menu-block-column_2 .menu-block-2-item .selected-arrow {
   display: none;
 }
 .menu-container .menu_block .menu-block-column_3 {
@@ -1139,7 +1207,32 @@ body:has(.tab_1 input:checked) .moto-tab-descriptions .moto-tab-description .all
   flex-direction: column;
   display: none;
 }
+.menu-container .menu_block .menu-block-column_3 .menu-block-3-item {
+  font-family: "Arial";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  color: #666666;
+  height: 30px;
+  align-items: center;
+  margin-left: 39px;
+}
+.menu-container .menu_block .menu-block-column_3 .menu-block-3-item:hover {
+  color: #E52E2E;
+  cursor: pointer;
+}
+
 body:has(.menu.menu-opened) .menu-container .menu_block .menu-block-column_1 {
+  display: flex;
+}
+
+body:has(.menu-block-1-item:hover) .menu-container .menu_block .menu-block-column_2,
+body:has(.menu-block-column_2:hover) .menu-container .menu_block .menu-block-column_2 {
+  display: flex;
+}
+
+body:has(.menu-block-2-item:hover) .menu-container .menu_block .menu-block-column_3,
+body:has(.menu-block-3-item:hover) .menu-container .menu_block .menu-block-column_3 {
   display: flex;
 }
 
